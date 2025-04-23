@@ -1,0 +1,124 @@
+@import url('admin_dashboard.css');
+header {
+  padding: 15px;
+  font-size: 22px;
+  align-items: start;
+  background: #05090e;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.enroll-form {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px; 
+}
+
+
+.enroll-form h2 {
+  grid-column: span 2;
+  font-size: 24px;
+  color: #0056b3;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 5px;
+}
+
+
+.enroll-form label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.full-width {
+  grid-column: span 2;
+}
+
+.enroll-form input,
+.enroll-form select {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.enroll-form input:focus,
+.enroll-form select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.gender-options {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.gender-options label {
+  font-weight: normal;
+  color: #555;
+}
+
+.gender-options input[type="radio"] {
+  margin-right: 5px;
+}
+
+.enroll-form button {
+  grid-column: span 2;
+  padding: 14px 20px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.enroll-form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.enroll-form button:active {
+  transform: translateY(0);
+}
+
+.enroll-form p {
+  grid-column: span 2;
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
